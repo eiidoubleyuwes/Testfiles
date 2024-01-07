@@ -5,4 +5,7 @@ Just ignore this repository
 Although this is where I make commits do my git can look good
 
 
+don't blame me mehn
+
+
 Maybe I should delete it
