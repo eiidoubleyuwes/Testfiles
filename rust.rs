@@ -21,4 +21,15 @@ fn main() {
         println!("You entered: {}", input);
 
         // Open the file in append mode
-     
+        let mut file = OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open("news.txt")
+            .expect("Failed to open file");
+
+        // Write the news headline to the file
+        writeln!(file, "{}", input).expect("Failed to write to file");
+    }
+
+    println!("Thank you for using the News App!");
+}
